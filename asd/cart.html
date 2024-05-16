@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./cart.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header></header>
+
+
+  <main class="main">
+    <div class="cart__body">
+      <div class="container">
+        <div class="cart__body-items">
+          <div class="cart__body-item item-cart">
+
+            <div class="item-cart__title">ALTAIR AL</div>
+            <span class="item-cart__price">9999</span>
+            <p class="descr">
+              Велосипед AL 27,5" V - качественная модель 2021 года от бренда ALTAIR, предназначенная для езды
+              по городу и пересеченной местности.
+            </p>
+            <div class="delete">
+              <div class="delete__inner"></div>
+            </div>
+          </div>
+          <div class="cart__body-item item-cart">
+
+            <div class="item-cart__title">ALTAIR AL</div>
+            <span class="item-cart__price">9999</span>
+            <p class="descr">
+              Велосипед AL 27,5" V - качественная модель 2021 года от бренда ALTAIR, предназначенная для езды
+              по городу и пересеченной местности.
+            </p>
+            <div class="delete">
+              <div class="delete__inner"></div>
+            </div>
+          </div>
+          <div class="cart__body-item item-cart">
+
+            <div class="item-cart__title">ALTAIR AL</div>
+            <span class="item-cart__price">9999</span>
+            <p class="descr">
+              Велосипед AL 27,5" V - качественная модель 2021 года от бренда ALTAIR, предназначенная для езды
+              по городу и пересеченной местности.
+            </p>
+            <div class="delete">
+              <div class="delete__inner"></div>
+            </div>
+          </div>
+          <div class="cart__body-item item-cart">
+
+            <div class="item-cart__title">ALTAIR AL</div>
+            <span class="item-cart__price">9999</span>
+            <p class="descr">
+              Велосипед AL 27,5" V - качественная модель 2021 года от бренда ALTAIR, предназначенная для езды
+              по городу и пересеченной местности.
+            </p>
+            <div class="delete">
+              <div class="delete__inner"></div>
+            </div>
+          </div>
+          <div class="cart__body-item item-cart">
+
+            <div class="item-cart__title">ALTAIR AL</div>
+            <span class="item-cart__price">9999</span>
+            <p class="descr">
+              Велосипед AL 27,5" V - качественная модель 2021 года от бренда ALTAIR, предназначенная для езды
+              по городу и пересеченной местности.
+            </p>
+            <div class="delete">
+              <div class="delete__inner"></div>
+            </div>
+          </div>
+        </div>
+        <div class="buy__block">
+          <p>Итого: <strong>49995</strong></p>
+          <button class="buy">Оплатить</button>
+
+        </div>
+      </div>
+
+    </div>
+    <form class="cart__form">
+      <input type="text" name="name" placeholder="Имя">
+      <input type="mail" name="mail" placeholder="Почта">
+      <input type="number" name="phone" placeholder="Номер">
+      <button class="send">Отправить</button>
+    </form>
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>
+
+
+<script>
+
+  const items = document.querySelectorAll('.cart__body-item')
+
+  var price = 49995
+  items.forEach(el => {
+    el.querySelector('.delete').addEventListener('click', () => {
+      el.style.display = 'none'
+      price -= Number(el.querySelector('.item-cart__price').innerHTML)
+      document.querySelector('strong').innerHTML = price
+    })
+  })
+
+  const btn = document.querySelector('.buy')
+
+  btn.addEventListener('click', () => {
+    document.querySelector('.cart__form').classList.add('active')
+  })
+  prices.forEach
+</script>
